@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<!-- File created by Wilko Quak via the sql2rdf.php script on 2015-10-29 -->
+<!-- File created by Wilko Quak via the sql2rdf.php script on 2015-11-06 -->
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/AnnotatieTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/AnnotatieTypeValue/annotatieLijn">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie lijn</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie lijn</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/AnnotatieTypeValue/annotatiePijlpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie pijl</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie pijl</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie pijlpunt</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/AnnotatieTypeValue/annotatieLabel">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie label</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie label</definition>
 </Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/AnnotatieTypeValue/annotatieLijn">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie lijn</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">annotatie lijn</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/TIFF">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/PNG">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">TIFF</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestandstype heeft als MIME type image/TIFF</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">PNG</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestandstype heeft als MIME type image/PNG</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/JPEG">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">JPEG</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestandstype heeft als MIME type image/JPEG</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/PNG">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/TIFF">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">PNG</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestandstype heeft als MIME type image/PNG</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">TIFF</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestandstype heeft als MIME type image/TIFF</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BestandMediaTypeValue/PDF">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -45,6 +45,11 @@
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BijlageTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BijlageTypeValue/nietBetrokken">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">niet betrokken</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Netbeheerder heeft geen utiliteitsnet in dit gebied maar heeft wel een belang bij deze melding. De bijlage geeft het belang weer.</definition>
+</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BijlageTypeValue/algemeen">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">algemeen</prefLabel>
@@ -55,10 +60,10 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eis voorzorgsmaatregel</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De bijlage geeft de eis voorzorgsmaatregel weer.</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BijlageTypeValue/nietBetrokken">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">niet betrokken</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Netbeheerder heeft geen utiliteitsnet in dit gebied maar heeft wel een belang bij deze melding. De bijlage geeft het belang weer.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verzoek tot contact</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Netbeheerder verzoekt tot opnemen contact.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -68,66 +73,75 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/K2-leiding">
+<ConceptScheme rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K2-leiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/K1-leiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K1-leiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/aardgasleidingNietNEN">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aardgasleiding niet NEN</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/defensieleiding">
+</ConceptScheme>
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">defensieleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">defensieleiding</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/aargasleidingNEN3650">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aargasleiding NEN3650</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/BuisleidingenType/K3-leiding">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K3-leiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K3-leiding</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K2-leiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K2-leiding</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aardgasleiding (niet NEN)</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aardgasleiding (niet NEN)</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aardgasleiding NEN-3650</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aardgasleiding NEN-3650</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K1-leiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">K1-leiding</definition>
 </Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/functional">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">buiten gebruik</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De faciliteit wordt niet meer gebruikt, maar wordt niet of is niet ontmanteld.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">functioneel</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De faciliteit is functioneel.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/projected">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">geprojecteerd</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De faciliteit wordt ontworpen. De bouwwerkzaamheden zijn nog niet begonnen.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/functional">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">functioneel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De faciliteit is functioneel.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">buiten gebruik</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De faciliteit wordt niet meer gebruikt, maar wordt niet of is niet ontmanteld.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/mast">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/toren">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Eenvoudig mast-object dat dienst kan doen als drager van nutsvoorzieningenobjecten van een of meer nutsvoorzieningnetten</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">toren</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Eenvoudig toren-object dat dienst kan doen als drager van nutsvoorzieningenobjecten van een of meer nutsvoorzieningnetten.
+</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/technischGebouw">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">technisch gebouw</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Heeft iemand een definitie?</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/kast">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -140,11 +154,10 @@
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Eenvoudig omhullingsobject dat een of meer nutsvoorzieningennetobjecten kan bevatten.
 </definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/toren">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ContainerLeidingElementTypeValue/mast">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">toren</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Eenvoudig toren-object dat dienst kan doen als drager van nutsvoorzieningenobjecten van een of meer nutsvoorzieningnetten.
-</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Eenvoudig mast-object dat dienst kan doen als drager van nutsvoorzieningenobjecten van een of meer nutsvoorzieningnetten</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/DiepteAangrijpingspuntValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -162,9 +175,9 @@
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType/brandbaar">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType/toxisch">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brandbaar</prefLabel>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">toxisch</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType/explosief">
@@ -177,28 +190,56 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">scherfwerking</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType/toxisch">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/EffectScenarionType/brandbaar">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">toxisch</prefLabel>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brandbaar</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+</Concept>
+<ConceptScheme rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</ConceptScheme>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bestaand</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Bestaande topografie die door de netbeheerder specifiek geregistreerd is ter bepaling van de locatie van een leiding.</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">plan</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Topografie van nog niet gerealiseerde maar wel geplande topografie-objecten.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/puntVanLevering">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/kbContact">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kb contact</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">als algemeen verbindende KB node</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/aarding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aarding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aarding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/mof">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/hoogteligging">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/adrespunt">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">adrespunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Adrespunt</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/hoogbouwkoppelpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/kbContact">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kb contact</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">als algemeen verbindende KB node</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/kbEindpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -221,33 +262,13 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">geulmof</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">geulmof</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/adrespunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Adrespunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Adrespunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/hoogteligging">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/mof">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ElectricityAppurtenanceTypeIMKLValue/aarding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aarding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aarding</definition>
-</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/deliveryPoint">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/mainStation">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Punt van levering.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">centrale</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Centrale.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/connectionBox">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -269,73 +290,68 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">netstation</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Netstation.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/mainStation">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">centrale</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Centrale.</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/generator">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">generator</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Generator.</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/ElectricityAppurtenanceTypeValue/deliveryPoint">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Punt van levering.</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/gestuurdeBoring">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/detail">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">detail</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Algemene aanduiding voor een nader detail van een situatie.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/dwarsprofiel">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">dwarsprofiel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/lengteprofiel">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lengteprofiel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lengteprofiel</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/aansluiting">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluiting</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De kabel of leiding die een kabel of leiding verbindt met een aansluitpunt.</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De kabel of leiding die een kabel of leiding verbindt met een aansluitpunt anders dan een huisaansluiting.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/overig">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een type detail dat niet met de andere waarden is benoemd.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraDetailInfoTypeValue/profielschets">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">profielschets</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Dwars- en of lengteprofiel.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraTopografieTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraTopografieTypeValue/eigen">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eigen</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Topografie die door de netbeheerder specifiek geregistreerd is ter bepaling van de locatie van een leiding.</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraTopografieTypeValue/ontwerp">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontwerp</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Topografie van nog niet gerealiseerde maar wel geplande topografie-objecten.</definition>
 </Concept>
-<ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ExtraTopografieTypeValue/eigen">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eigen</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Topografie die door de netbeheerder specifiek geregistreerd is ter bepaling van de locatie van een leiding.</definition>
+</Concept>
+<ConceptScheme rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">maatvoeringslabel</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue/maatvoeringspijlpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">maatvoeringspijlpunt</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue/maatvoeringslijn">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">maatvoeringslijn</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue/maatvoeringshulplijn">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">maatvoeringshulplijn</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue/maatvoeringslijn">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">maatvoeringslijn</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/MaatvoeringsTypeValue/maatvoeringslabel">
@@ -349,40 +365,41 @@
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/tot30cm">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 30 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 30 cm</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/tot50cm">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 50 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 50 cm</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/tot100cm">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 100 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 100 cm</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 30 cm.</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/onbekend">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">onbekend</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">onbekend</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad is onbekend.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/tot100cm">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 100 cm</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 100 cm.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidDiepteValue/tot50cm">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 50 cm</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 50 cm.
+Nauwkeurigheidsgraad tot op 100 cm.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidXYvalue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidXYvalue/tot50cm">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 50 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 50 cm</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidXYvalue/tot100cm">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 100 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 100 cm</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot50cm</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 50 cm.</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidXYvalue/tot30cm">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 30 cm</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot 30 cm</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot30cm</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 30 cm.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/NauwkeurigheidXYvalue/tot100cm">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tot100cm</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Nauwkeurigheidsgraad tot op 100 cm.</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -392,45 +409,90 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bocht</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Bocht</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/algemeenGasTransportOnderdeel">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/kbMeetpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Algemeen (gas) transport onderdeel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Algemeen (gas) transport onderdeel</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/verloopstuk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verloopstuk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verloopstuk</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/afsluiter">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/meetpunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">meetpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">meetpunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/sifon">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sifon</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sifon</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kb meetpunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kbMeetpunt</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/blaasgat">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blaasgat</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blaasgat</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/kbMeetpunt">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/sifon">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kb meetpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kbMeetpunt</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sifon</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sifon</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/buis">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/meetpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">buis</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Buis</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">meetpunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">meetpunt</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/afsluiter">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/verloopstuk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verloopstuk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verloopstuk</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/eindkap">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindkap</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindkap</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/adrespunt">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">adrespunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">adrespunt</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/hoogteligging">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/ontspanningselement">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontspanningselement</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontspanningselement</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/isolatiestuk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">isolatiestuk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">isolatiestuk</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/overgangsstuk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overgangsstuk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overgangsstuk</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/aftakzadel">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftakzadel</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftakzadel</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/ontluchting">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontluchting</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontluchting</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/hoogbouwkoppelpunt">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/algemeenGasTransportOnderdeel">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Algemeen (gas) transport onderdeel</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Algemeen (gas) transport onderdeel</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/raaginrichting">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">raaginrichting</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"> Raaginrichting</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/vloeistofvanger">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -462,68 +524,23 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">t stuk</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Tstuk</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/raaginrichting">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/buis">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">raaginrichting</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"> Raaginrichting</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/hoogbouwkoppelpunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogbouwkoppelpunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/ontluchting">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontluchting</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontluchting</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/aftakzadel">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftakzadel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftakzadel</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/overgangsstuk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overgangsstuk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overgangsstuk</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/isolatiestuk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">isolatiestuk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">isolatiestuk</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/ontspanningselement">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontspanningselement</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ontspanningselement</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/hoogteligging">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogteligging</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/adrespunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">adrespunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">adrespunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsAppurtenanceIMKLTypeValue/eindkap">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindkap</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindkap</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">buis</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Buis</definition>
 </Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/productionRegion">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Productiegebied</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Productiegebied</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/pumpingStation">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pompstation</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pompstation</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/pump">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pomp</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pomp</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/storage">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -537,12 +554,12 @@
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/gasStation">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Gasstation</prefLabel>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gasstation</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Gasstation</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/marker">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Markering</prefLabel>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">markering</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Markering</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/oilGasChemicalsNode">
@@ -550,19 +567,29 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Olie-, gas- en chemicaliënnet-knooppunt</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Knooppunt in een olie-, gas- en chemicaliënnet.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/pump">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pomp</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pomp</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/deliveryPoint">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Punt van levering</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsAppurtenanceTypeValue/productionRegion">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Productiegebied</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Productiegebied</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue/bioGas">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bioGas</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bioGas</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue/glycol">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">glycol</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Glycol</definition>
+</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue/emulsie">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">emulsie</prefLabel>
@@ -578,23 +605,13 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mud</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Mud</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue/bioGas">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bioGas</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bioGas</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductIMKLTypeValue/glycol">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">glycol</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Glycol</definition>
-</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/unknown">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/sand">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">unknown</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">unknown</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sand</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sand</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/OilGasChemicalsProductTypeValue/naturalGas">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -756,15 +773,15 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">saumur</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">saumur</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/sand">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sand</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sand</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/tetrachloroide">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tetrachloroide</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">tetrachloroide</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/unknown">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">unknown</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">unknown</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/OilGasChemicalsProductTypeValue/water">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -789,136 +806,449 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">exploitant</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
 </Concept>
-<ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde">
+<ConceptScheme rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/overstortleiding">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstortleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstortleiding</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pitch fibre</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/hemelwaterriool">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hemelwaterriool</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hemelwaterriool</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">High-density polyethylene</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/gemengdRiool">
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Gietijzer</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">PVC-U</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Sprayed concrete</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Gewapend beton</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beton</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Cement mortar</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polypropyleen</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">PE</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polyester</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Epoxy</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Metselwerk (onbepleisterd)</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Metselwerk (bepleisterd)</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Unidentified type of Iron or steel</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Staal</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Ductile cast iron</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Grijs gietijzer</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GVK</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Fibre cement</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Betonnen segmenten</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Bitumen</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Asbestcement</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Unidentified material</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Unidentified type of plastics</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">staal</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">safe line aluminium</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">roestvaststaal</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">polyvinylchloride biaxiaal verstrekt</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">polyvinylchloride</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">polybutyleen</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">polyetheen</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"> lood</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">nodulair gietijzer</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"> koper</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hostaliet</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">glasvezel versterkte kunststof</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">glasvezel versterkte beton</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">grijsgietijzer</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">koper</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">beton</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">astbestcement</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Wood. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Terracota. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Steel. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Reinforced polymer mortar (RPMP). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Reinforced concrete. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polyvinyl chloride (PVC). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Prestressed reinforced concrete. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polypropylene (PP). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Cross-linked high-density polyethylene (PEX). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polyethylene (PE). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Polybutylene (PB). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Other. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Masonry. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Galvanized steel. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Fibre reinforced plastic (FRP). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Chlorinated polyvinyl chloride (CPVC). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Concrete. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Composite concrete. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Clay. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Iron with a high Carbon content (above 2%). </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Steel with a surface layer of dark coloured iron oxides. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Iron without any finish on it, gray-black in color. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Asbestos. </definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Other (details in remarks section)</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Metselwerk</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Clay</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Acrylonitrile butadiene styrene (ABS). </definition>
+</Concept>
+<ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</ConceptScheme>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/gemengdRiool">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemengd riool</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemengd riool</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/bergingsleiding">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/hemelwaterriool">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergingsleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergingsleiding</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hemelwaterriool</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hemelwaterriool</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/aansluitleiding">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/overstortleiding">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluitleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluitleiding</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstortleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstortleiding</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/doorlatendeleiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">doorlatendeleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">doorlatendeleiding</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/transportrioolleiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">transportrioolleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">transportrioolleiding</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/zinker">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/openLeiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openLeiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openLeiding</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/vuilwaterriool">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vuilwaterriool</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vuilwaterriool</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/bergbezinkleiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergbezinkleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergbezinkleiding</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeWaarde/stuwrioolleiding">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/stuwrioolleiding">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stuwrioolleiding</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stuwrioolleiding</definition>
 </Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/doorlatendeleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">doorlatendeleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">doorlatendeleiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/vuilwaterriool">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vuilwaterriool</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vuilwaterriool</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/bergbezinkleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergbezinkleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergbezinkleiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/aansluitleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluitleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluitleiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/transportrioolleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">transportrioolleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">transportrioolleiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/zinker">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/openLeiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openLeiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openLeiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/RioolleidingTypeValue/bergingsleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergingsleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bergingsleiding</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/uitlaatconstructie">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">uitlaatconstructie</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">uitlaatconstructie</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/gemaal">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/infiltratievoorziening">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">infiltratievoorziening</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">infiltratievoorziening</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/kolk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/kunstwerk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kunstwerk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kunstwerk</definition>
+</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/reservoir">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">reservoir</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">reservoir</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/puntVanLevering">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/gestuurdeBoring">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/inEnUittredepuntBoringen">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">In/ en uittredepunt boringen</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">In/ en uittredepunt boringen</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/zinker">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Zinker (indien diepte t.o.v. NAP ook wordt aangegeven kan dit vervallen)</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/mantelbuis">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mantelbuis</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Mantelbuis</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/overdrachtsstation">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overdrachtsstation</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overdrachtsstation</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/pompstation">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pompstation</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pompstation</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/putten">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">put(ten)</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">put(ten)</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/lekdetectiemeetpunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lekdetectiemeetpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Lekdetectiemeetpunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/compensator">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">compensator</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Compensator</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/puntVanLevering">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -930,31 +1260,6 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstort</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overstort</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/uitlaatconstructie">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">uitlaatconstructie</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">uitlaatconstructie</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/kunstwerk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kunstwerk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kunstwerk</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/kolk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/infiltratievoorziening">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">infiltratievoorziening</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">infiltratievoorziening</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/SewerAppurtenanceTypeIMKLValue/gemaal">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</definition>
-</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
@@ -962,6 +1267,36 @@
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mangatbuis</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Mangatbuis.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/connection">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluiting</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Aansluiting.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/dischargeStructure">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afvoerinrichting</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afvoerinrichting.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/specificStructure">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">specifieke structuur</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Specifieke structuur.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/thrustProtection">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stootbeschermer</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stootbeschermer.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/tideGate">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">wachtdeur</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Wachtdeur.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/watertankOrChamber">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">watertank of -kelder</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Watertank of -kelder.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/catchBasin">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -973,39 +1308,14 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afsluiter.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/watertankOrChamber">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">watertank of -kelder</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Watertank of -kelder.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/tideGate">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">wachtdeur</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Wachtdeur.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/thrustProtection">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stootbeschermer</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stootbeschermer.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/specificStructure">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">specifieke structuur</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Specifieke structuur.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/dischargeStructure">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afvoerinrichting</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afvoerinrichting.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerAppurtenanceTypeValue/connection">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aansluiting</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Aansluiting.</definition>
-</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/SewerWaterTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerWaterTypeValue/sanitary">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">huishoudelijk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Huishoudelijk afvalwater.</definition>
+</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerWaterTypeValue/storm">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">storm</prefLabel>
@@ -1016,11 +1326,6 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gecombineerd</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Gecombineerd afvalwater.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerWaterTypeValue/sanitary">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">huishoudelijk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Huishoudelijk afvalwater.</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/SewerWaterTypeValue/reclaimed">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">teruggewonnen</prefLabel>
@@ -1029,35 +1334,10 @@
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/termination">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">termination</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">termination</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/mof">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/antenna">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">antenna</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">antenna</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/kabelverdeler">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kabelverdeler</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kabelverdeler</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/Stijgleiding">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stijgleiding</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stijgleiding</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/GTWPOpnemen">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GTWPOpnemen</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GTWPOpnemen</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/puntVanLevering">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -1074,81 +1354,62 @@
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afdekplaten</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afdekplaten</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/verzameltermOndergrondseLeidingelementenOpnemen">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/GTWP">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verzameltermOndergrondseLeidingelementenOpnemen</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verzamelterm ondergrondse leidingelementen opnemen </definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GTWP</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">geultraject wijzigingspunt</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/Stijgleiding">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stijgleiding</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Stijgleiding</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/nietBenoemd">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">niet benoemd</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">verzamelterm ondergrondse leidingelementen</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/mof">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mof</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/handhole">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">handhole</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">handhole</definition>
 </Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/termination">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">termination</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">termination</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsAppurtenanceIMKLTypeValue/antenna">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">antenna</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">antenna</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue/opticalFiber">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue/coaxial">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">opticalFiber</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">opticalFiber</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">coaxial</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">coaxial</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue/twistedPair">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">twistedPair</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">twistedPair</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue/coaxial">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TelecommunicationsCableMaterialTypeValue/opticalFiber">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">coaxial</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">coaxial</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">opticalFiber</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">opticalFiber</definition>
 </Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/middenspanning">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">middenspanning</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">MS kabel bestaat uit hoofdnet en aansluitnet. MS = middenspanning (0,4 kV tot 30 kV)
-NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
-Opmerking: In de praktijk kunnen netten van 400 Volt op de MS themakaart voorkomen.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/hoogspanning">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogspanning</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Toestand waarin het mogelijk is een elektrische stroom te creren; HS = hoogspanning (36 tot en met 220 kV).
-Opmerking: In de praktijk kunnen netten vanaf 20 kV t/m 220 kV op de HS themakaart voorkomen.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/landelijkHoogspanningsnet">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">landelijk hoogspanningsnet</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Toestand waarin het mogelijk is een elektrische stroom te creren;ZHS = zeer hoge spanning (110 kV tot en met 380 kV). </definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/petrochemie">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">(petro)chemie</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Leiding voor transport van olie of chemicalin, niet vallend onder het thema ‘Buisleiding gevaarlijke inhoud’.
-</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/gasHogeDruk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gas hoge druk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een gasleiding hogedruk (HD) heeft een drukniveau hoger dan 200  mBar en bestaat uit een hoofdleiding en een aansluitleiding. HD druksoorten: 8, 4, 1 Bar.
-NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
-Opmerking: In de praktijk kunnen netten vanaf 200 mBar op de HD themakaart voorkomen.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/gasLageDruk">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gas lage druk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een gasleiding lagedruk (LD) heeft een drukniveau lager dan 200 mBar en bestaat uit een hoofdleiding en een aansluitleiding. LD druksoorten: 100, 30 mBar.
-NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
-Opmerking: In de praktijk kunnen netten tot en met 500 mBar op de LD themakaart voorkomen.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/datatransport">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De elektronische overdracht van signaalinformatie tussen punten via kabels die deel uitmaken van een net.
-NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/buisleidingGevaarlijkeInhoud">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">buisleiding gevaarlijke inhoud</prefLabel>
@@ -1161,21 +1422,10 @@ h. categorie K1: een product niet zijnde een brandbaar gas met een vlampunt dat,
 i. categorie K2: een product met een vlampunt dat, bepaald met het toestel van Abel-Pensky, bij een druk van 100 kPa ligt tussen de 21C en 55C;
 j. categorie K3: een product met een vlampunt dat, bepaald met het toestel van Pensky-Martens, bij een druk van 100 kPa hoger is dan 55C en lager is dan 100C;</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/overig">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/rioolOnderDruk">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Alle, niet bij de andere thema’s omschreven vormen van transport door middel van kabels en leidingen.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/wees">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">wees</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Alle onbekende leidingen welke bij een eerdere grondroering zijn geconstateerd, die ook na onderzoek niet aan een beheerder waren toe te wijzen en waarvoor de gemeente ingevolge de WION de beheerdersverplichtingen vervult.</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/water">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">water</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een waterleiding bestaat uit transport-, distributie- en aansluitleidingen ten behoeve van (drink)water.
-NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riool onder druk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Riolering waarbij het transport plaatsvindt door overdruk (uit NEN 3300, Buitenriolering) dan wel onderdruk.</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/warmte">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -1205,15 +1455,58 @@ Temp. 5-16°
 Druk 2-16 bar
 NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/rioolOnderDruk">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/hoogspanning">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riool onder druk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Riolering waarbij het transport plaatsvindt door overdruk (uit NEN 3300, Buitenriolering) dan wel onderdruk.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogspanning</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Toestand waarin het mogelijk is een elektrische stroom te creren; HS = hoogspanning (36 tot en met 220 kV).
+Opmerking: In de praktijk kunnen netten vanaf 20 kV t/m 220 kV op de HS themakaart voorkomen.</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/rioolVrijverval">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/water">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riool vrijverval</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Riool waardoor afvalwater door de zwaartekracht wordt getransporteerd (uit NEN 3300, Buitenriolering).</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">water</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een waterleiding bestaat uit transport-, distributie- en aansluitleidingen ten behoeve van (drink)water.
+NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/wees">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">wees</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Alle onbekende leidingen welke bij een eerdere grondroering zijn geconstateerd, die ook na onderzoek niet aan een beheerder waren toe te wijzen en waarvoor de gemeente ingevolge de WION de beheerdersverplichtingen vervult.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/overig">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overig</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Alle, niet bij de andere thema’s omschreven vormen van transport door middel van kabels en leidingen.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/gasHogeDruk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gas hoge druk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een gasleiding hogedruk (HD) heeft een drukniveau hoger dan 200  mBar en bestaat uit een hoofdleiding en een aansluitleiding. HD druksoorten: 8, 4, 1 Bar.
+NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
+Opmerking: In de praktijk kunnen netten vanaf 200 mBar op de HD themakaart voorkomen.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/landelijkHoogspanningsnet">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">landelijk hoogspanningsnet</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Toestand waarin het mogelijk is een elektrische stroom te creren;ZHS = zeer hoge spanning (110 kV tot en met 380 kV). </definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/datatransport">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De elektronische overdracht van signaalinformatie tussen punten via kabels die deel uitmaken van een net.
+NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/petrochemie">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">(petro)chemie</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Leiding voor transport van olie of chemicalin, niet vallend onder het thema ‘Buisleiding gevaarlijke inhoud’.
+</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/gasLageDruk">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gas lage druk</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een gasleiding lagedruk (LD) heeft een drukniveau lager dan 200 mBar en bestaat uit een hoofdleiding en een aansluitleiding. LD druksoorten: 100, 30 mBar.
+NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
+Opmerking: In de praktijk kunnen netten tot en met 500 mBar op de LD themakaart voorkomen.</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/laagspanning">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -1222,205 +1515,227 @@ NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.</defi
 NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
 Opmerking: In de praktijk kunnen netten tot en met 1000 Volt op de LS themakaart voorkomen</definition>
 </Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/middenspanning">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">middenspanning</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">MS kabel bestaat uit hoofdnet en aansluitnet. MS = middenspanning (0,4 kV tot 30 kV)
+NB: De aansluitleiding kan ook alleen op (huis)aansluitschetsen voorkomen.
+Opmerking: In de praktijk kunnen netten van 400 Volt op de MS themakaart voorkomen.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/Thema/rioolVrijverval">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riool vrijverval</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Riool waardoor afvalwater door de zwaartekracht wordt getransporteerd (uit NEN 3300, Buitenriolering).</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/put">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/inEnUittredepuntBoringen">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">put</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">In/ en uittredepunt boringen</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">In/ en uittredepunt boringen</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/puntVanLevering">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/zinker">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zinker</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Zinker (indien diepte t.o.v. NAP ook wordt aangegeven kan dit vervallen)</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/compensator">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/mantelbuis">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">compensator</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/lekdetectiemeetpunt">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lekdetectiemeetpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">mantelbuis</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Mantelbuis</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/overdrachtsstation">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overdrachtsstation</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overdrachtsstation</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/lekdetectiemeetpunt">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lekdetectiemeetpunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Lekdetectiemeetpunt</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/pompstation">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pompstation</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pompstation</definition>
 </Concept>
-<ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/put">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">put</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">put</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/compensator">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">compensator</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Compensator</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/gestuurdeBoring">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gestuurde boring</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/ThermalAppurtenanceTypeIMKLValue/puntVanLevering">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</definition>
+</Concept>
+<ConceptScheme rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/talud">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">talud</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">talud (? niet gevonden in imgeo)</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/stuw">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stuw</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stuw</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/steiger">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">steiger</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">steiger</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/hoogspanningsmast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogspanningsmast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogspanningsmast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/muur">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">muur</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">muur</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/faunaraster">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">faunaraster</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">faunaraster</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/draadraster">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">draadraster</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">draadraster</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/hek">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hek</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hek</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hek</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/loods">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">loods</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">loods</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/overkapping">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overkapping</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overkapping</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/pandgeometrie">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pandgeometrie</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pandgeometrie</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/erf">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">erf</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">erf</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/waterloop">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waterloop</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waterloop</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/rijbaanLokaleWeg">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rijbaan lokale weg</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rijbaan lokale weg</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/fietspad">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">fietspad</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">fietspad</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/sloot">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sloot</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sloot</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/kolk">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">kolk</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kolk</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/inspectieputRioolput">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">inspectie- / rioolput</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">inspectie- / rioolput</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/inspectie-_/_rioolput</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/hectometerpaal">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hectometerpaal</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hectometerpaal</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hectometerpaal</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/portaal">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">portaal</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">portaal</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/openbareVerlichtingkast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openbare verlichtingkast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openbare verlichtingkast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/rioolkast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rioolkast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rioolkast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/telecomkast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">telecomkast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">telecom kast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/gaskast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gaskast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gaskast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/elektrakast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">elektrakast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">elektrakast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/Caikast">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">CAI-kast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">CAI-kast</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/viaduct">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">viaduct</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">viaduct</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/brug">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brug</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brug</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/gemaal">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/TopografischObjectTypeValue/lichtmast">
+<Concept rdf:about="">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lichtmast</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lichtmast</definition>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lichtmast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">portaal</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/portaal</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">openbare verlichtingkast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/openbare_verlichtingkast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rioolkast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rioolkast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">telecom kast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/telecom_kast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gaskast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gaskast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">elektrakast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/elektrakast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">CAI-kast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/CAI-kast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">viaduct</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/viaduct</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brug</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/brug</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">gemaal</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gemaal</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">stuw</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/stuw</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">steiger</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/steiger</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">hoogspanningsmast</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hoogspanningsmast</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">muur</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/muur</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">faunaraster</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/faunaraster</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">draadraster</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/draadraster</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">loods</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/loods</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">overkapping</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/overkapping</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">pand</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/BuildingPart</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">talud (? niet gevonden in imgeo)</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/talud</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">erf</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/erf</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">sloot</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sloot</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">fietspad</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fietspad</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">rijbaan lokale weg</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rijbaan_lokale_weg</definition>
+</Concept>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waterloop</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waterloop</definition>
 </Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue/transport">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vervoer</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beschrijving van een nutsvoorzieningennet waarbij het nutsproduct wordt aangeleverd via een groot vervoernet (bv. voor het overbrengen van olie-, gas- of chemische producten over grotere afstanden).</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue/private">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">particulier</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beschrijving van een nutsvoorzieningennet waarbij het nutsproduct wordt aangeleverd via een klein particulier net (dat bv. eigendom is van een particulier bedrijf).</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue/distribution">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">distributie</prefLabel>
@@ -1431,52 +1746,52 @@ Opmerking: In de praktijk kunnen netten tot en met 1000 Volt op de LS themakaart
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">inzameling</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beschrijving van een nutsvoorzieningennet waarbij het nutsproduct wordt aangeleverd door middel van inzameling (bv. het opvangen van afvalwater van klanten in het geval van een rioleringsnet).</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue/private">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">particulier</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beschrijving van een nutsvoorzieningennet waarbij het nutsproduct wordt aangeleverd via een klein particulier net (dat bv. eigendom is van een particulier bedrijf).</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityDeliveryTypeValue/transport">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vervoer</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Beschrijving van een nutsvoorzieningennet waarbij het nutsproduct wordt aangeleverd via een groot vervoernet (bv. voor het overbrengen van olie-, gas- of chemische producten over grotere afstanden).</definition>
+</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/crossTheme">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">crossTheme</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl"></definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/sewer">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riolering</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Rioleringsnet.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/electricity">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">elektriciteit</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Elektriciteitsnet.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/oilGasChemical">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">olie, gas of chemicaliën</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Olie-, gas- of chemicaliënnet.</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/telecommunications">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">telecommunicatie</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Telecommunicatienet.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/thermal">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">thermisch</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Thermisch net.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/water">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">water</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Watervoorzieningsnet.</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/thermal">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">thermisch</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Thermisch net.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/sewer">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">riolering</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Rioleringsnet.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/oilGasChemical">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">olie, gas of chemicaliën</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Olie-, gas- of chemicaliënnet.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/UtilityNetworkTypeValue/electricity">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">elektriciteit</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Elektriciteitsnet.</definition>
+</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/WarningTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WarningTypeValue/concretePaving">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">betonnen plaveisel</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een reeks betonnen stenen of tegels ter afdekking van kabels of pijpleidingen.</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/WarningTypeValue/tape">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">lint</prefLabel>
@@ -1487,62 +1802,47 @@ Opmerking: In de praktijk kunnen netten tot en met 1000 Volt op de LS themakaart
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">net</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Waarschuwingsnet ter bescherming van kabels en pijpleidingen.</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WarningTypeValue/concretePaving">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">betonnen plaveisel</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Een reeks betonnen stenen of tegels ter afdekking van kabels of pijpleidingen.</definition>
+</Concept>
 <ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/materiaalovergang">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">materiaalovergang</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">materiaalovergang</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/eindpunt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindpunt</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">eindpunt</definition>
-</Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/blindflens">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blindflens</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blindflens</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/puntVanLevering">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">punt van levering</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/afsluiter">
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/materiaalovergang">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">materiaalovergang</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">materiaalovergang</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/blindflens">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blindflens</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">blindflens</definition>
 </Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/diameterovergang">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">diameterovergang</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">diameterovergang</definition>
 </Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterAppurtenanceTypeIMKLValue/afsluiter">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluiter</definition>
+</Concept>
 <ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/checkValve">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluitklep</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afsluitklep.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/fireHydrant">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brandkraan</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Brandkraan.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/waterDischargePoint">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afvoerpunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afvoerpunt.</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/waterExhaustPoint">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftappunt</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Aftappunt.</definition>
-</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/waterServicePoint">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">toevoerpunt</prefLabel>
@@ -1558,15 +1858,20 @@ Opmerking: In de praktijk kunnen netten tot en met 1000 Volt op de LS themakaart
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">anode</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Anode.</definition>
 </Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/checkValve">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afsluitklep</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afsluitklep.</definition>
+</Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/controlValve">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">controleventiel</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Controleventiel.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/well">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/fireHydrant">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bron</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Winningsbron.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">brandkraan</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Brandkraan.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/junction">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -1608,38 +1913,61 @@ Opmerking: In de praktijk kunnen netten tot en met 1000 Volt op de LS themakaart
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zuiveringsinstallatie</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Zuiveringsinstallatie.</definition>
 </Concept>
-<ConceptScheme rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/waterDischargePoint">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">afvoerpunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Afvoerpunt.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/waterExhaustPoint">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">aftappunt</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Aftappunt.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterAppurtenanceTypeValue/well">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">bron</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Winningsbron.</definition>
+</Concept>
+<ConceptScheme rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterTypeValue">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/treated">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">behandeld</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Behandeld water.</definition>
-</Concept>
 <Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterTypeValue/industrial">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">industrial</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">industrial</definition>
 </Concept>
-<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterTypeValue/waste">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/salt">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waste</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waste</definition>
-</Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/potable">
-    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">drinkbaar</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Drinkwater.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zout</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Zout water.</definition>
 </Concept>
 <Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/raw">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">onbehandeld</prefLabel>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Onbehandeld water.</definition>
 </Concept>
-<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/salt">
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/potable">
     <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">zout</prefLabel>
-    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Zout water.</definition>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">drinkbaar</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Drinkwater.</definition>
+</Concept>
+<Concept rdf:about="http://inspire.ec.europa.eu/codelist/WaterTypeValue/treated">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">behandeld</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Behandeld water.</definition>
+</Concept>
+<Concept rdf:about="http://www.geonovum.nl/imkl2015/1.0/def/WaterTypeValue/waste">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waste</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">waste</definition>
+</Concept>
+<ConceptScheme rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</ConceptScheme>
+<Concept rdf:about="">
+    <type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">huisaansluiting</prefLabel>
+    <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">De kabel of leiding die een kabel of leiding verbindt met een huisaansluitpunt.</definition>
 </Concept>
 </rdf:RDF>
 
