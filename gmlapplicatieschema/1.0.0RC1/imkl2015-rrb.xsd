@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" xmlns:rrb="http://www.geostandaarden.nl/imkl/2015/rrb/1.0" xmlns:us-net-common="http://inspire.ec.europa.eu/schemas/us-net-common/4.0" xmlns:us-net-ogc="http://inspire.ec.europa.eu/schemas/us-net-ogc/4.0" elementFormDefault="qualified" targetNamespace="http://www.geostandaarden.nl/imkl/2015/rrb/1.0" version="1.0RC1">
+  <import namespace="http://inspire.ec.europa.eu/schemas/us-net-common/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/us-net-common/4.0/UtilityNetworksCommon.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/us-net-ogc/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/us-net-ogc/4.0/OilGasChemicalsNetwork.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AanduidingVerzoekContact" substitutionGroup="gml:AbstractFeature" type="rrb:AanduidingVerzoekContactType"/>
+  <complexType name="AanduidingVerzoekContactType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" name="maatregel" type="string"/>
+          <element minOccurs="0" name="netRisicoOmschrijving" type="string"/>
+          <element name="geometrie" type="gml:SurfacePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AanduidingVerzoekContactPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:AanduidingVerzoekContact"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Adres" substitutionGroup="gml:AbstractObject" type="rrb:AdresType"/>
+  <complexType name="AdresType">
+    <sequence>
+      <element name="openbareRuimteNaam" type="string"/>
+      <element name="huisnummer" type="string"/>
+      <element minOccurs="0" name="huisletter" type="string"/>
+      <element minOccurs="0" name="huisnummertoevoeging" type="integer"/>
+      <element name="woonplaatsNaam" type="string"/>
+      <element name="postcode" type="string"/>
+      <element name="landcode" type="string"/>
+      <element minOccurs="0" name="identificatieBAG" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="AdresPropertyType">
+    <sequence>
+      <element ref="rrb:Adres"/>
+    </sequence>
+  </complexType>
+  <complexType name="BuisSpecifiekPropertyType">
+    <choice minOccurs="0">
+      <element ref="rrb:OlieGasChemicalienPijpleiding"/>
+    </choice>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="Diepte" substitutionGroup="gml:AbstractFeature" type="rrb:DiepteType"/>
+  <complexType abstract="true" name="DiepteType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element name="diepteNauwkeurigheid" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">NauwkeurigheidDiepteValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="dieptePeil" type="gml:MeasureType"/>
+          <element minOccurs="0" name="datumOpmetingDieptePeil" type="dateTime"/>
+          <element name="diepteAangrijpingspunt" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">DiepteAangrijpingspuntValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="ligging" type="gml:PointPropertyType"/>
+          <element name="inNetwork" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">rrb:Utiliteitsnet</targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DieptePropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:Diepte"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="DiepteNAP" substitutionGroup="rrb:Diepte" type="rrb:DiepteNAPType"/>
+  <complexType name="DiepteNAPType">
+    <complexContent>
+      <extension base="rrb:DiepteType">
+        <sequence>
+          <element minOccurs="0" name="maaiveldPeil" type="gml:MeasureType"/>
+          <element minOccurs="0" name="datumOpmetingMaaiveldPeil" type="dateTime"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DiepteNAPPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:DiepteNAP"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="DiepteTovMaaiveld" substitutionGroup="rrb:Diepte" type="rrb:DiepteTovMaaiveldType"/>
+  <complexType name="DiepteTovMaaiveldType">
+    <complexContent>
+      <extension base="rrb:DiepteType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DiepteTovMaaiveldPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:DiepteTovMaaiveld"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="EffectcontourDodelijk" substitutionGroup="gml:AbstractFeature" type="rrb:EffectcontourDodelijkType"/>
+  <complexType name="EffectcontourDodelijkType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element name="effectcontourDodelijk" type="gml:MultiSurfacePropertyType"/>
+          <element name="bijTransportroute" type="rrb:TransportroutePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EffectcontourDodelijkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:EffectcontourDodelijk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ExtraGeometrie" substitutionGroup="gml:AbstractFeature" type="rrb:ExtraGeometrieType"/>
+  <complexType name="ExtraGeometrieType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="vlakgeometrie2D" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="puntgeometrie2.5D" type="gml:PointPropertyType"/>
+          <element minOccurs="0" name="lijngeometrie2.5D" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="vlakgeometrie2.5D" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="geometrie3D" type="gml:SolidPropertyType"/>
+          <element name="inNetwork" type="rrb:UtiliteitsnetPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ExtraGeometriePropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:ExtraGeometrie"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <complexType name="IMKLBasisPropertyType">
+    <choice minOccurs="0">
+      <element ref="rrb:Diepte"/>
+      <element ref="rrb:EffectcontourDodelijk"/>
+      <element ref="rrb:ExtraGeometrie"/>
+      <element ref="rrb:Transportroute"/>
+      <element ref="rrb:TransportrouteRisico"/>
+      <element ref="rrb:Utiliteitsnet"/>
+    </choice>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <complexType name="KabelOfLeidingPropertyType">
+    <choice minOccurs="0">
+      <element ref="rrb:OlieGasChemicalienPijpleiding"/>
+    </choice>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="NEN3610ID" substitutionGroup="gml:AbstractObject" type="rrb:NEN3610IDType"/>
+  <complexType name="NEN3610IDType">
+    <sequence>
+      <element name="namespace" type="string"/>
+      <element name="lokaalID" type="string"/>
+      <element minOccurs="0" name="versie" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="NEN3610IDPropertyType">
+    <sequence>
+      <element ref="rrb:NEN3610ID"/>
+    </sequence>
+  </complexType>
+  <element name="OlieGasChemicalienPijpleiding" substitutionGroup="us-net-ogc:OilGasChemicalsPipe" type="rrb:OlieGasChemicalienPijpleidingType"/>
+  <complexType name="OlieGasChemicalienPijpleidingType">
+    <complexContent>
+      <extension base="us-net-ogc:OilGasChemicalsPipeType">
+        <sequence>
+          <element minOccurs="0" name="buismateriaalType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">PipeMaterialTypeValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geoNauwkeurigheidXY" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">NauwkeurigheidXYvalue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="toelichting" type="string"/>
+          <element minOccurs="0" name="extraGeometrie" type="rrb:ExtraGeometriePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="dieptelegging" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">rrb:Diepte</targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OlieGasChemicalienPijpleidingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:OlieGasChemicalienPijpleiding"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PuntLijnVlak" substitutionGroup="gml:AbstractObject" type="rrb:PuntLijnVlakType"/>
+  <complexType name="PuntLijnVlakType">
+    <choice>
+      <element name="punt" type="gml:PointPropertyType"/>
+      <element name="lijn" type="gml:CurvePropertyType"/>
+      <element name="vlak" type="gml:SurfacePropertyType"/>
+    </choice>
+  </complexType>
+  <complexType name="PuntLijnVlakPropertyType">
+    <sequence>
+      <element ref="rrb:PuntLijnVlak"/>
+    </sequence>
+  </complexType>
+  <element name="TechnischContactpersoon" substitutionGroup="gml:AbstractObject" type="rrb:TechnischContactpersoonType"/>
+  <complexType name="TechnischContactpersoonType">
+    <sequence>
+      <element name="naam" type="gml:stringOrNilReason"/>
+      <element name="telefoon" type="gml:stringOrNilReason"/>
+      <element name="email" type="gml:stringOrNilReason"/>
+    </sequence>
+  </complexType>
+  <complexType name="TechnischContactpersoonPropertyType">
+    <sequence>
+      <element ref="rrb:TechnischContactpersoon"/>
+    </sequence>
+  </complexType>
+  <element name="Transportroute" substitutionGroup="gml:AbstractFeature" type="rrb:TransportrouteType"/>
+  <complexType name="TransportrouteType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element name="transportrouteNaam" type="string"/>
+          <element name="omschrijving" type="string"/>
+          <element name="buisleidingtype" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">BuisleidingTypeValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="maatgevendScenarioDodelijk" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">EffectScenarioType</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="casNrMaatgevendeStof" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TransportroutePropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:Transportroute"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TransportrouteRisico" substitutionGroup="gml:AbstractFeature" type="rrb:TransportrouteRisicoType"/>
+  <complexType name="TransportrouteRisicoType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element name="risicocontour10_6" type="gml:MultiSurfacePropertyType"/>
+          <element name="bijTransportroute" type="rrb:TransportroutePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TransportrouteRisicoPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:TransportrouteRisico"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <complexType name="TransportroutedeelPropertyType">
+    <choice minOccurs="0"/>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Utiliteitsnet" substitutionGroup="us-net-common:UtilityNetwork" type="rrb:UtiliteitsnetType"/>
+  <complexType name="UtiliteitsnetType">
+    <complexContent>
+      <extension base="us-net-common:UtilityNetworkType">
+        <sequence>
+          <element name="identificatie" type="rrb:NEN3610IDPropertyType"/>
+          <element name="beginLifespanVersion" type="dateTime"/>
+          <element minOccurs="0" name="endLifespanVersion" type="dateTime"/>
+          <element name="thema" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">Thema</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="technischContactpersoon" type="rrb:TechnischContactpersoonPropertyType"/>
+          <element minOccurs="0" name="standaardDieptelegging" type="gml:MeasureType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UtiliteitsnetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="rrb:Utiliteitsnet"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
